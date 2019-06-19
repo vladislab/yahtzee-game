@@ -74,19 +74,19 @@ class ScoreTable extends Component {
                 name="Three of Kind"
                 score={scores.threeOfKind}
                 doScore={evt => doScore("threeOfKind", threeOfKind.evalRoll)}
-                description="If 3+ of one value, score sum of all dice (else 0)"
+                description="Sum all dice if 3 are the same"
               />
               <RuleRow
                 name="Four of Kind"
                 score={scores.fourOfKind}
                 doScore={evt => doScore("fourOfKind", fourOfKind.evalRoll)}
-                description="If 4+ of one value, score sum of all dice (else 0)"
+                description="Sum all dice if 4 are the same"
               />
               <RuleRow
                 name="Full House"
                 score={scores.fullHouse}
                 doScore={evt => doScore("fullHouse", fullHouse.evalRoll)}
-                description="If 3 of one value and 2 of another, score 25 (else 0)"
+                description="25 points for a full house"
               />
               <RuleRow
                 name="Small Straight"
@@ -94,7 +94,7 @@ class ScoreTable extends Component {
                 doScore={evt =>
                   doScore("smallStraight", smallStraight.evalRoll)
                 }
-                description="If 4+ values in a row, score 30 (else 0)"
+                description="30 points for a smal straight"
               />
               <RuleRow
                 name="Large Straight"
@@ -102,19 +102,19 @@ class ScoreTable extends Component {
                 doScore={evt =>
                   doScore("largeStraight", largeStraight.evalRoll)
                 }
-                description="If 5 values in a row, score 40 (else 0)"
+                description="40 points for a large straight"
               />
               <RuleRow
                 name="Yahtzee"
                 score={scores.yahtzee}
                 doScore={evt => doScore("yahtzee", yahtzee.evalRoll)}
-                description="If all values match, score 50 (else 0)"
+                description="50 points for yahtzee"
               />
               <RuleRow
                 name="Chance"
                 score={scores.chance}
                 doScore={evt => doScore("chance", chance.evalRoll)}
-                description="Score sum of all dice"
+                description="Sum of all dice"
               />
             </tbody>
           </table>
