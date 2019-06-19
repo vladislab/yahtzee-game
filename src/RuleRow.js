@@ -7,15 +7,18 @@ class RuleRow extends Component {
     this.state = { isDisabled: false };
   }
   handleClick = () => {
-    if (!this.state.isDisabled) this.props.doScore();
-    this.setState({ isDisabled: true });
+    if (!this.state.isDisabled && !this.props.isRolling) {
+      this.props.doScore();
+      this.setState({ isDisabled: true });
+    }
   };
   render() {
     return (
       <tr
-        className={`RuleRow RuleRow-${
-          this.state.isDisabled ? `disabled` : `active`
-        }`}
+        className={`RuleRow ${
+          this.state.isDisabled ? `RuleRow-disabled` : `RuleRow-active`
+        }
+        ${this.props.isRolling ? `RuleRow-rolling` : ``}`}
         onClick={this.handleClick}
       >
         <td className="RuleRow-name">{this.props.name}</td>

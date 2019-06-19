@@ -18,6 +18,10 @@
   animation: Slide 1s ease 1;
 }
 
+.RuleRow-rolling:hover {
+  cursor: not-allowed;
+}
+
 @keyframes Slide {
   0% {
     background-position: 100% 50%;
@@ -31,6 +35,7 @@
 }
 
 .RuleRow-disabled:hover {
+  cursor: not-allowed;
   cursor: not-allowed;
 }
 

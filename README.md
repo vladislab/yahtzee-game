@@ -1,4 +1,6 @@
-# The Game
+**NOTE: Stylings of this project was provided free-to-use**
+
+# Yahtzee The Game
 
 Yahtzee is a chance-and-strategy dice rolling game. A game is played over 13 rounds.
 

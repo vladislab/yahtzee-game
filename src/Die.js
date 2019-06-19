@@ -17,16 +17,16 @@ class Die extends Component {
     if (this.props.val === 6) return "six";
   };
   render() {
+    let classes = `Die fas fa-dice-${this.getDieFace()} fa-5x `;
+    if (this.props.locked) classes += "Die-locked ";
+    if (this.props.isRolling) classes += "Die-rolling ";
+
     return (
-      <button
-        className={`Die${this.props.locked ? `-locked` : ``}${
-          this.props.isRolling ? `-rolling` : ``
-        }`}
-        //style={{ backgroundColor: this.props.locked ? "grey" : "black" }}
+      <i
+        className={classes}
         onClick={this.handleClick}
-      >
-        <i className={`Die fas fa-dice-${this.getDieFace()}`} />
-      </button>
+        disabled={this.props.disabled}
+      />
     );
   }
 }
