@@ -8,7 +8,7 @@ Each round, they must assign their dice to any unclaimed scoring category. Each 
 
 After 13 rounds, the game is over, and the player’s score is the total of each scoring category.
 
-#Scoring Categories
+## Scoring Categories
 
 **Category | Description |Example Score**
 
@@ -26,13 +26,19 @@ After 13 rounds, the game is over, and the player’s score is the total of each
 
 _3 of Kind:_
 If 3+ of one value, score sum of all dice (otherwise, score 0) 1 2 3 3 3 = 12
+
 _4 of Kind:_
 If 4+ of one value, score sum of all dice (else 0) 1 2 2 2 2 = 8
+
 _Full House:_ If 3 of one value and 2 of another, score 25 (else 0) 2 2 3 3 3 = 25
+
 _Small Straight:_ If 4+ values in a row, score 30 (else 0) 1 2 3 4 6 = 30
+
 _Large Straight:_ If 5 values in a row, score 40 (else 0) 1 2 3 4 5 = 40
+
 _Yahtzee:_ If all values match, score 50 (else 0) 2 2 2 2 2 = 50
-Chance Score sum of all dice 1 2 3 4 6 = 16
+
+_Chance Score_ sum of all dice 1 2 3 4 6 = 16
 
 ## Example Round
 
