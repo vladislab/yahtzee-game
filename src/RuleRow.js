@@ -7,8 +7,8 @@ class RuleRow extends Component {
     this.state = { isDisabled: false };
   }
   handleClick = () => {
+    if (!this.state.isDisabled) this.props.doScore();
     this.setState({ isDisabled: true });
-    this.props.doScore();
   };
   render() {
     return (
@@ -19,7 +19,9 @@ class RuleRow extends Component {
         onClick={this.handleClick}
       >
         <td className="RuleRow-name">{this.props.name}</td>
-        <td className="RuleRow-score">{this.props.score}</td>
+        <td className="RuleRow-score">
+          {this.state.isDisabled ? this.props.score : this.props.description}
+        </td>
       </tr>
     );
   }
