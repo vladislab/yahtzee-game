@@ -23,6 +23,7 @@ class Rule {
     // frequencies of dice values
     const freqs = new Map();
     for (let d of dice) freqs.set(d, (freqs.get(d) || 0) + 1);
+    console.log(Array.from(freqs.values()));
     return Array.from(freqs.values());
   }
 
@@ -57,14 +58,28 @@ class SumDistro extends Rule {
 
 /** Check if full house (3-of-kind and 2-of-kind) */
 
-class FullHouse {
+class FullHouse extends Rule {
   // TODO
+  evalRoll = dice => {
+    /** if the frequency array returns an array that has one element of value less than 4, the other element must also be less than 4, result [3,2]  or [2,3]*/
+    return this.freq(dice).length === 2 &&
+      (this.freq(dice)[0] < 4 || this.freq(dice)[1] < 4)
+      ? this.score
+      : 0;
+  };
 }
 
 /** Check for small straights. */
 
-class SmallStraight {
+class SmallStraight extends Rule {
   // TODO
+  evalRoll = dice => {
+    /**if the frequency array has length less than 2 (meaning [3,2] or [2,3] is worst case) */
+    return this.freq(dice).length === 2 &&
+      (this.freq(dice)[0] >= 4 || this.freq(dice)[1] >= 4)
+      ? this.score
+      : 0;
+  };
 }
 
 /** Check for large straights. */
@@ -100,10 +115,10 @@ const threeOfKind = new SumDistro({ count: 3 });
 const fourOfKind = new SumDistro({ count: 4 });
 
 // full house scores as flat 25
-const fullHouse = "TODO";
+const fullHouse = new FullHouse({ score: 25 });
 
 // small/large straights score as 30/40
-const smallStraight = "TODO";
+const smallStraight = new SmallStraight({ score: 30 });
 const largeStraight = new LargeStraight({ score: 40 });
 
 // yahtzee scores as 50
