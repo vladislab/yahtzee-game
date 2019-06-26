@@ -1,6 +1,5 @@
 .Game {
-  max-width: 50%;
-  min-width: 550px;
+  min-width: 60vh;
 
   background: white;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
