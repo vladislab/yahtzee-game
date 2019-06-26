@@ -20,7 +20,9 @@ After 13 rounds, the game is over, and the player’s score is the total of each
 |**Fours** |Score 4 for every 4 | 1 2 4 4 5 = 8|
 |**Fives** |Score 5 for every 5 | 1 2 5 5 5 = 15|
 |**Sixes** |Score 6 for every 6 | 1 2 3 6 6 = 12|
+
 ---
+
 |Point             |Rule                                                                              |
 -------------------|---------------------------------------------------------------------------------:|
 |_3 of Kind:_      |If 3+ of one value, score sum of all dice (otherwise, score 0) 1 2 3 3 3 = 12     |
@@ -47,7 +49,9 @@ Sixes: for 6 points
 Three of Kind: (twos) for 15 points
 Chance: for 15 points
 Any other category they claimed on this round would score 0.
+
 ---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
