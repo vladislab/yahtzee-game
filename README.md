@@ -12,19 +12,14 @@ After 13 rounds, the game is over, and the player’s score is the total of each
 
 ## Scoring Categories
 
-**Category | Description |Example Score**
-
-**Ones** |Score 1 for every 1 | 1 1 2 3 4 = 2
-
-**Twos** |Score 2 for every 2 | 1 2 2 3 4 = 4
-
-**Threes** |Score 3 for every 3 | 1 2 3 3 3 = 9
-
-**Fours** |Score 4 for every 4 | 1 2 4 4 5 = 8
-
-**Fives** |Score 5 for every 5 | 1 2 5 5 5 = 15
-
-**Sixes** |Score 6 for every 6 | 1 2 3 6 6 = 12
+|Category | Description |Example Score|
+----------|:-----------:|------------:|
+|**Ones** |Score 1 for every 1 | 1 1 2 3 4 = 2|
+|**Twos** |Score 2 for every 2 | 1 2 2 3 4 = 4|
+|**Threes** |Score 3 for every 3 | 1 2 3 3 3 = 9|
+|**Fours** |Score 4 for every 4 | 1 2 4 4 5 = 8|
+|**Fives** |Score 5 for every 5 | 1 2 5 5 5 = 15|
+|**Sixes** |Score 6 for every 6 | 1 2 3 6 6 = 12|
 
 _3 of Kind:_
 If 3+ of one value, score sum of all dice (otherwise, score 0) 1 2 3 3 3 = 12
