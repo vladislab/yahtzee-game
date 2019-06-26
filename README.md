@@ -1,5 +1,3 @@
-**NOTE: Stylings of this project was provided free-to-use**
-
 # Yahtzee The Game
 
 Yahtzee is a chance-and-strategy dice rolling game. A game is played over 13 rounds.
@@ -51,6 +49,7 @@ Chance: for 15 points
 Any other category they claimed on this round would score 0.
 
 ---
+**NOTE: Stylings of this project was provided free-to-use**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
