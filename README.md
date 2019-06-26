@@ -21,7 +21,8 @@ After 13 rounds, the game is over, and the player’s score is the total of each
 |**Fives** |Score 5 for every 5 | 1 2 5 5 5 = 15|
 |**Sixes** |Score 6 for every 6 | 1 2 3 6 6 = 12|
 ---
-
+|Point             |Rule                                                                              |
+-------------------|---------------------------------------------------------------------------------:|
 |_3 of Kind:_      |If 3+ of one value, score sum of all dice (otherwise, score 0) 1 2 3 3 3 = 12     |
 |_4 of Kind:_      |If 4+ of one value, score sum of all dice (else 0) 1 2 2 2 2 = 8                  |
 |_Full House:_     |If 3 of one value and 2 of another, score 25 (else 0) 2 2 3 3 3 = 25              |
