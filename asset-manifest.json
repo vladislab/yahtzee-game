@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/yahtzee-game/static/css/main.3a7fa0b0.chunk.css",
+    "main.js": "/yahtzee-game/static/js/main.5d090bab.chunk.js",
+    "main.js.map": "/yahtzee-game/static/js/main.5d090bab.chunk.js.map",
+    "runtime~main.js": "/yahtzee-game/static/js/runtime~main.6f837cd2.js",
+    "runtime~main.js.map": "/yahtzee-game/static/js/runtime~main.6f837cd2.js.map",
+    "static/js/2.03fb47ab.chunk.js": "/yahtzee-game/static/js/2.03fb47ab.chunk.js",
+    "static/js/2.03fb47ab.chunk.js.map": "/yahtzee-game/static/js/2.03fb47ab.chunk.js.map",
+    "index.html": "/yahtzee-game/index.html",
+    "precache-manifest.657e338da311b81caaf3490e0da0dbd1.js": "/yahtzee-game/precache-manifest.657e338da311b81caaf3490e0da0dbd1.js",
+    "service-worker.js": "/yahtzee-game/service-worker.js",
+    "static/css/main.3a7fa0b0.chunk.css.map": "/yahtzee-game/static/css/main.3a7fa0b0.chunk.css.map"
+  }
+}
